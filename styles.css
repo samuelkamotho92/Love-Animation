@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.heart
+{   position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s  linear forwards;
+    font-size: 30px;
+}
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
+}
+.love
+{
+    justify-content: center;
+    font-size: 70px;
+    margin-top: 270px;
+  text-shadow: 5px 2px violet;
+  color: rgb(216, 13, 172);
+}
+.wedd{
+    background-color: brown;
+    animation: bride 5s infinite;
+    font-size: 20px;
+    margin: 20px;
+    height: 50px;
+    padding: 10px;
+}
+ @keyframes bride{
+    0%   {background-color: blue;}
+    25%  {background-color: red;}
+    75%  {background-color: pink;}
+    100% {background-color: yellow;}
+ }
